@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <title>Home – Jamie Bae</title>
     <link rel="stylesheet" href="css/style.css">
     
     <!-- webfont -->
@@ -10,18 +11,25 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,300,400,700&display=swap" rel="stylesheet">
 </head>
 <body>
+   
+    <div class="overlay"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
     <header id="header">
         <div class="container">
            <div class="row">
                 <div class="header">
                     <nav class="nav">
                         <ul>
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">PROJECT</a></li>
-                            <li><a href="#">ABOUT</a></li>
+                            <li class="link2 hover chover"><a href="index.html">PROJECTS</a></li>
+                            <li class="link2 chover"><a href="playground.html">PLAYGROUND</a></li>
+                            <li class="link2 chover"><a href="about.html">ABOUT</a></li>
                         </ul>
                     </nav>
-                    <h1><a href="#">JAMIE BAE</a></h1>
+                    <div class="ham">
+                        <span class="bar"></span>
+                    </div>
+                    <h1><a href="#">JB</a></h1>
                 </div>
             </div>
         </div>
@@ -30,7 +38,7 @@
         <div class="container">
             <div class="row">
                 <div class="about">
-                    <strong>UX/UI designer</strong> focused on creating digital experience that empower users and provide better solution for the real-world problems.
+                     UI/UX designer who <strong>loves</strong> creating digital experience that <strong>empower</strong> <strong>users</strong> and <strong>provide</strong>  <strong>innovative</strong> solutions. 
                 
                 </div>
             </div>
@@ -38,7 +46,120 @@
         
     </section>
     
-    <section id="contents"></section>
-    <footer id="footer"></footer>
+    <section id="contents">
+        <div class="container">
+            <div class="row">
+                <div class="content">
+                    <div>
+                        <a href="treatspace.html" class="chover">
+                            <figure>
+                                <img src="img/Treatspace_Front.png" srcset="img/Treatspace_Front@2x.png 2x, img/Treatspace_Front@3x.png 3x" alt="Treatspace Front Image">
+                                <figcaption>
+                                    Treatspace 2019
+                                    <em>Responsive Website Design</em>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="universalinsignia.html" class="chover">
+                            <figure>
+                                <img src="img/Universal_Insignia_Front.png" srcset="img/Universal_Insignia_Front@2x.png 2x, img/Universal_Insignia_Front@3x.png 3x"  alt="Universal Insignia Front Image">
+                                <figcaption>
+                                    Universal Insignia 2019
+                                    <em>iPad Educational Application</em>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="axlehire.html" class="chover">
+                            <figure>
+                                <img src="img/AxleHire_Front.png" srcset="img/AxleHire_Front@2x.png 2x, img/AxleHire_Front@3x.png 3x" alt="AxleHire Front Image">
+                                <figcaption>
+                                    AxleHire
+                                    <em>UIUX Design</em>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="fithand.html" class="chover">
+                            <figure>
+                                <img src="img/Fithand_Front.png" srcset="img/Fithand_Front@2x.png 2x, img/Fithand_Front@3x.png 3x" alt="Fithand Front Image">
+                                <figcaption>
+                                    FitHand
+                                    <em>A Service App</em>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="bvw.html" class="chover">
+                            <figure>
+                                <img src="img/Building_Virtual_Worlds_Front.png" srcset="img/Building_Virtual_Worlds_Front@2x.png 2x, img/Building_Virtual_Worlds_Front@3x.png 3x" alt="Building Virtual Worlds Front Image">
+                                <figcaption>
+                                    Building Virtual Worlds
+                                    <em>VR/AR Game Design</em>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="webershandwick.html" class="chover">
+                            <figure>
+                                <img src="img/Weber_Shandwick_Front.png" srcset="img/Weber_Shandwick_Front@2x.png 2x, img/Weber_Shandwick_Front@3x.png 3x" alt="Weber Shandwick Front Image">
+                                <figcaption>
+                                    Weber Shandwick
+                                    <em>Digital Media Design</em>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="resume">
+                    <h3>Feel free to say hi!</h3>
+                    <div>
+                        <span class="link"><a href="Mailto:jongmibae@gmail.com">Email me</a></span>
+                        <span class="link"><a href="img/Jamie_Bae_Resume.pdf" target="_blank">View Resume</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer">
+                    <a class="chover">@ 2019 by Jamie J. Bae</a>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/jongmibae/" target="_blank" class="chover">Linkedin</a></li>
+                        <li><a href="https://dribbble.com/JamieBae" target="_blank" class="chover">Dribbble</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $('.ham').click(function(){
+            $(this).toggleClass('active');
+            $(".overlay").toggleClass('active');
+            $("#header").toggleClass('active');
+            $(".header h1").toggleClass('active');
+        });
+        $(window).resize(function(){
+            var wWidth = $(window).width();
+            if(wWidth > 768){
+                $(".ham").removeClass("active");
+                $(".overlay").removeClass("active");
+                $("#header").removeClass("active");
+                $(".header h1").removeClass("active");
+            }
+        });
+    </script>
 </body>
 </html>
