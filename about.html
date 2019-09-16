@@ -3,26 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no, initial-scale=.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
-    <title>About – Jamie Bae</title>
+    <title>About – Jamie Jongmi Bae</title>
     <link rel="stylesheet" href="css/style.css">
+        
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicon_72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="img/favicon_96.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon_144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="img/favicon_192.png" />
     
     <!-- webfont -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,300,400,700&display=swap" rel="stylesheet">
 </head>
 <body>
+   
+    <div class="overlay"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
     <header id="header" >
         <div class="container">
            <div class="row">
                 <div class="header">
                     <nav class="nav">
                         <ul>
-                            <li><a href="index.html">PROJECTS</a></li>
-                            <li><a href="#">PLAYGROUND</a></li>
-                            <li><a href="about.html">ABOUT</a></li>
+                            <li class="link2 chover"><a href="index.html">PROJECTS</a></li>
+                            <li class="link2 chover"><a href="playground.html">PLAYGROUND</a></li>
+                            <li class="link2 hover chover"><a href="about.html">ABOUT</a></li>
                         </ul>
                     </nav>
-                    <h1><a href="index.html">JB</a></h1>
+                    <div class="ham">
+                        <span class="bar"></span>
+                    </div>
+                    <h1 class='chover'><a href="index.html">JB</a></h1>
                 </div>
             </div>
         </div>
@@ -39,9 +53,9 @@
         <div class="container2">
             <div class="row">
                 <div class="textarea">
-                    <h3>Hello, I am Jamie Bae</h3>
+                    <h3>Hello, I am Jamie Jongmi Bae</h3>
                     <h4></h4>
-                    <p class="pb08">I am a UX/UI Designer with a background in Fine Art and 2D Design. Currently, I’m pursuing a Masters in Entertainment Technology at Carnegie Mellon University in the Greater Pittsburgh. I have worked in inspiring startup companies as a UX/UI designer.
+                    <p class="pb03">I am a UX/UI Designer with a background in Fine Art and 2D Design. Currently, I’m pursuing a Masters in Entertainment Technology at Carnegie Mellon University in the Greater Pittsburgh. I have worked in inspiring startup companies as a UX/UI designer.
 
                     I believe that a designer should have great patience to listen, empathize, Synthesize, iterate, story tell and with craftsmanship skills to create an Impactful design. How good is a product which is not just a tool, but serves you like a best friend understanding your needs and surprising in advance.
 
@@ -49,6 +63,34 @@
 
                     My goal as a designer is to create engaging, functional and accessible user experiences that delight people and solves complex business problems. In my free time, I enjoy exploring new cuisines, watching diverse films, and reading about design, technology and many other fields.
                     </p>
+                    <div class="link chover">
+                        <a href="img/Jamie_Bae_Resume.pdf" target="_blank">View Resume</a>
+                    </div>
+                    <h3 class="mt10"></h3>
+                    <h4 class="pb03">EXPERIENCE</h4>
+                    <p class="Title">UX/UI Designer Intern - Treatspace</p>
+                    <p class="pb03">Pittsburgh,PA, May-August 2019</p>
+                    
+                    <p class="Title">UX/UI Designer Intern - AxleHire</p>
+                    <p class="pb03">San Francisco,PA, May-August 2017</p>
+
+                    <p class="Title">Creative Director Intern - Weber Shandwick</p>
+                    <p class="pb03">Seoul, April-August 2016</p>
+                    
+                    <p class="Title">Freelancer Graphic Designer</p>
+                    <p class="pb03">2014-Present</p>
+
+                    <p class="mt10">
+                    <h4 class="pb03">EDUCATION</h4>
+                    
+                    <p class="Title">Masters in Entertainment Technology - Carnegie Mellon University</p>
+                    <p class="pb03">Pittsburgh, August 2018 - May 2020</p>
+                    
+                    <p class="Title">MFA in 2D Design - Cranbrook Academy of Art</p>
+                    <p class="pb03">Bloomfiled Hills, Michigan, September 2016 - May 2018</p>
+
+                    <p class="Title">BFA in Visual Communication - School of the Art Institute of Chicago</p>
+                    <p class="pb03">Chicago, August 2010 - December 2014</p>
                 </div>
             </div>
         </div>
@@ -58,13 +100,34 @@
                     <div class="footer">
                         <a>@ 2019 by Jamie J. Bae</a>
                         <ul>
-                            <li><a href="https://www.linkedin.com/in/jongmibae/">Linkedin</a></li>
-                            <li><a href="https://dribbble.com/JamieBae">Dribbble</a></li>
+                            <li><a href="https://www.linkedin.com/in/jongmibae/" target="_blank">Linkedin</a></li>
+                            <li><a href="https://dribbble.com/JamieBae" target="_blank">Dribbble</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </footer>
     </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $('.ham').click(function(){
+            $(this).toggleClass('active');
+            $(".overlay").toggleClass('active');
+            $("#header").toggleClass('active');
+            $(".header h1").toggleClass('active');
+        });
+        $(window).resize(function(){
+            var wWidth = $(window).width();
+            if(wWidth > 768){
+                $(".ham").removeClass("active");
+                $(".overlay").removeClass("active");
+                $("#header").removeClass("active");
+                $(".header h1").removeClass("active");
+            }
+        });
+    </script>
 </body>
 </html>

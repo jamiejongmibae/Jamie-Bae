@@ -6,22 +6,36 @@
     <title>Treatspace – Jamie Bae, Projects</title>
     <link rel="stylesheet" href="css/style.css">
     
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicon_72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="img/favicon_96.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon_144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="img/favicon_192.png" />
+    
     <!-- webfont -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR:200,300,400,700&display=swap" rel="stylesheet">
 </head>
 <body>
+   
+    <div class="overlay"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
     <header id="header" >
         <div class="container">
            <div class="row">
                 <div class="header">
                     <nav class="nav">
                         <ul>
-                            <li><a href="index.html">PROJECTS</a></li>
-                            <li><a href="#">PLAYGROUND</a></li>
-                            <li><a href="about.html">ABOUT</a></li>
+                            <li class="link2 hover"><a href="index.html">PROJECTS</a></li>
+                            <li class="link2"><a href="playground.html">PLAYGROUND</a></li>
+                            <li class="link2"><a href="about.html">ABOUT</a></li>
                         </ul>
                     </nav>
+                    <div class="ham">
+                        <span class="bar"></span>
+                    </div>
                     <h1><a href="index.html">JB</a></h1>
                 </div>
             </div>
@@ -30,7 +44,7 @@
     <section id="sub_Banner">
         <div class="container">
             <div class="row">
-                <h2>FitHand</h2>
+                <h2>Treatspace</h2>
             </div>
         </div>
         <figure class="img"></figure>
@@ -59,19 +73,48 @@
                 </div>
             </div>
         </div>
+        <section class="next">           
+            <div class="container">
+                <div class="row">
+                    <h6>Next Project</h6>
+                    <a href="universalinsignia.html">Universal Insignia 2019</a>
+                </div>
+            </div>
+        </section>
         <footer id="footer">
             <div class="container">
                 <div class="row">
                     <div class="footer">
-                        <a>@ 2019 by Jamie J. Bae</a>
+                        <a>@ 2019 by Jamie Jongmi Bae</a>
                         <ul>
-                            <li><a href="https://www.linkedin.com/in/jongmibae/">Linkedin</a></li>
-                            <li><a href="https://dribbble.com/JamieBae">Dribbble</a></li>
+                            <li><a href="https://www.linkedin.com/in/jongmibae/" target="_blank">Linkedin</a></li>
+                            <li><a href="https://dribbble.com/JamieBae" target="_blank">Dribbble</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </footer>
     </section>
+    <a href="#header"><img src="img/top.png" class="top"></a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $('.ham').click(function(){
+            $(this).toggleClass('active');
+            $(".overlay").toggleClass('active');
+            $("#header").toggleClass('active');
+            $(".header h1").toggleClass('active');
+        });
+        $(window).resize(function(){
+            var wWidth = $(window).width();
+            if(wWidth > 768){
+                $(".ham").removeClass("active");
+                $(".overlay").removeClass("active");
+                $("#header").removeClass("active");
+                $(".header h1").removeClass("active");
+            }
+        });
+    </script>
 </body>
 </html>

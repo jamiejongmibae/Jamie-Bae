@@ -5,6 +5,13 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
     <title>Home – Jamie Bae</title>
     <link rel="stylesheet" href="css/style.css">
+        
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicon_72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="img/favicon_96.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon_144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="img/favicon_192.png" />
     
     <!-- webfont -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap" rel="stylesheet">
@@ -15,7 +22,8 @@
     <div class="overlay"></div>
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
-    <header id="header">
+    
+       <header id="header">
         <div class="container">
            <div class="row">
                 <div class="header">
@@ -196,9 +204,10 @@
                 </div>
                 <div class="resume">
                     <h3>Feel free to say hi!</h3>
-                    <button class="r-button button button_type2">
-                        <span class="button__label">VIEW RESUME</span>
-                    </button>
+                    <div>
+                        <span class="link"><a href="Mailto:jongmibae@gmail.com">Email me</a></span>
+                        <span class="link"><a href="img/Jamie_Bae_Resume.pdf" target="_blank">View Resume</a></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -207,7 +216,7 @@
         <div class="container">
             <div class="row">
                 <div class="footer">
-                    <a>@ 2019 by Jamie J. Bae</a>
+                    <a>@ 2019 by Jamie Jongmi Bae</a>
                     <ul>
                         <li><a href="https://www.linkedin.com/in/jongmibae/" target="_blank">Linkedin</a></li>
                         <li><a href="https://dribbble.com/JamieBae" target="_blank">Dribbble</a></li>
@@ -223,7 +232,7 @@
                 <figure><img src="img/Playground1_big.png" alt="eventpage"></figure>
                 <a href="#" class="close2">
                     <svg viewBox="0 0 24 24">
-                <path d="M14.1,12L22,4.1c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L12,9.9L4.1,2C3.5,1.4,2.5,1.4,2,2C1.4,2.5,1.4,3.5,2,4.1
+                        <path d="M14.1,12L22,4.1c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L12,9.9L4.1,2C3.5,1.4,2.5,1.4,2,2C1.4,2.5,1.4,3.5,2,4.1
         L9.9,12L2,19.9c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4l7.9-7.9l7.9,7.9c0.3,0.3,0.7,0.4,1.1,0.4
         s0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1L14.1,12z"/>
                     </svg>
@@ -254,12 +263,13 @@
         
         //design modal
         $(".playground .m1").on("click",function(e){
-            $("#modal.m1").removeClass("out").removeClass("open").addClass("open")
             e.preventDefault();
+            $("#modal.m1").removeClass("out").removeClass("open").addClass("open");
+            
         });
-        $("#modal.m1 .close2").on("click",function(e){
+        $("#modal .close2").on("click",function(e){
             e.preventDefault();
-            $("#modal.m1").toggleClass("out")
+            alert("dd")
         });
         
     </script>
