@@ -65,14 +65,68 @@
                     <p class="pb03">This is one of my self-initiative personal project to challenge myself bring out of my creativity and nurture my passion. 
                     </p>
                     
-                    <h3 class="mt10">1.Discover</h3>
+                    <h3 class="mt10">1. Understanding the Problem</h3>
                     <h4 class="pb03">THE CHALLENGE</h4>
                     <p>“How to improve the website more deliverable and user-friendly?”
-                    The challenge was simple and straightforward. AxleHire needed to improve the exisitng landing website as well as internal staging website. My goal was to enhance the landing website more deliverable and usable. I practiced responsive design to make the web adaptive to changing device dimensions. After defined the major pain points, I created user flow, wireframes, low&high-fidelity UI and an interactive prototype for usability testing.
+                    By growing the personal training business 10% per year, Trainers have limited time to meet with individual clients. Clients who are not interested in personal training and even in the workouts are difficult to motivate outside of sessions. It takes a lot of money to attract new customers, so It is difficult to find new clients and build consistent relationships.
+
+
                     </p>
                 </div>
             </div>
         </div>
+    <section id="textarea">
+        <div class="container2">
+            <div class="row">
+                <div class="textarea">
+                    <h3 class="mt10"></h3>
+                    <h3 class="mt10">2. Define</h3>
+                    <h4 class="pb03">CONTEXTUAL INQUIRIES</h4>
+                    <p class="pb03">As life expectancy has increased and income levels have improved, interest in health, which affects the quality of life, has naturally increased. This is in line with the global demand for health-related consumption, not only in developed countries that are now centered, but also in some developing countries where income levels are rapidly improving.</p>
+                    <h3 class="mt10"></h3>
+                    <h4 class="pb03">INSIGHT</h4>
+                    <p class="pb03">To serve the clients, trainers use different techniques like using workouts that they created with multiple clients for maximizing the efficiency. However, with the FitHand, they can focus on sustaining a balance between giving a personalized experience and training. Also, they can manage their time by using the app conveniently.</p>
+                    <p class="pb03">Almost of all trainers have a clear knowledge of their clients’ information and habits even if they are not with them. So they try their best to suggest better habits for the trainees. Trainers have their limitation to take care of their trainees which resulted in a loss of about half of clients. However, with the FitHand, trainers can save a lot of time by giving suggestions through a centralized hub system.</p>
+                    <p class="pb03">The interviews indicate that almost all of the trainers are satisfied with their jobs and want to keep doing them. With the Fit Hand, trainers can manage their clients more efficiently.
+                    </p>
+                    <h3 class="mt10"></h3>
+                    <h4 class="pb03">USER INTERVIEW AND PERSONA</h4>
+                    <p>Based on the contextual inquiries and insight, I created 3 personas that represent the main target users for FitHand. By conducting interviews, I was able to get more detailed insight into what would be their possible needs for the virtual personal training app called “FitHand”. I interviewed some people and categorized them into three groups:
+                    <P>people who do not workout</P>
+                    <P>people who like to workout</P>
+                    <P>Personal trainers</P>
+                    <P>Each interviews was 10 minutes.</P>
+                    <h3 class="mt10"></h3>
+
+                    <h4 class="pb03"></h4>
+                    <h3 class="mt10">3. Ideation</h3>
+                    <h4 class="pb03">SUPPORTED PLATFORM</h4>
+                    <p>I decided to choose mobile for the supported platform for following reasons:</p>
+                    <p>Portable, more accessible than web</p>
+                    <p>Users could find the most suitable trainers at anytime, anywhere</p>
+                    <p>Enables to see workout updates from trainers</p>
+                    <p>Devloping prototypes and rapidly iterating are all based on testing results. We learned even small things, like this age range tends to find it easier to click buttons on the bottom of the ipad. We had all of our directional controls at the top, and they were not getting used!
+                    </p>
+                    <h3 class="mt10"></h3>
+                    <h4 class="pb03">SKETCHING and BRAINSTORMING</h4>
+                    <p>I brainstormed and sketched out features based on the three priorities that I set for the major design goals.</p>
+                    <h4 class="pb03"></h4>
+                    <h3 class="mt10">4. Design</h3>
+                    <h4 class="pb03">USER FLOW</h4>
+                    <p>For this project, I wanted to focus on one main user flow, which is “matches the most suitable trainers.” I tried to make the flow simple, so users don't get frustrated by the prolong process of matching the suitable trainers.
+                    </p>
+                    <h3 class="mt10"></h3>
+                    <h4 class="pb03">WIREFRAMES(SOLUTION ANALYSIS)</h4>
+                    <p>I created a wireframe of important pages that I was mainly focusing on that reflect the design goals that I set for the project. The main focus was (1) to provide clear explanation on what FitHand does and how it works, (2) allow users to have sufficient needs and goals, and (3) make the matching process easy and convenient. 
+                    </p>
+                    <h3 class="mt10">4. Reflection</h3>
+                    <p>The process of making user flow was the most challenging for me when I created this app. It is because I had to give the right solution for each of the stakeholder’s needs. However, by focusing on the design goals that set for the project like matches the most suitable trainers, I was able to create a simple user flow. For example, to provide a clear explanation of what fithande does and how it works. Also, make the matching process easy and convenient. By thinking about the user's needs, I was able to figure it out the user interface more efficient.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+        
         <section class="next">           
             <div class="container">
                 <div class="row">
@@ -96,6 +150,7 @@
         </footer>
     </section>
     <a href="#header"><img src="img/top.png" class="top"></a>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="js/custom.js"></script>
@@ -113,6 +168,16 @@
                 $(".overlay").removeClass("active");
                 $("#header").removeClass("active");
                 $(".header h1").removeClass("active");
+            }
+        });
+
+        $(window).scroll(function(){
+            var wScroll = $(this).scrollTop();
+            
+            if(wScroll > 1000){
+                $(".top").addClass("on");
+            } else {
+                $(".top").removeClass("on");
             }
         });
     </script>
