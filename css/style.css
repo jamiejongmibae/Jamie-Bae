@@ -9,23 +9,23 @@ a{color: #333; text-decoration: none; font-family: "MaisonNeue-Light", "MaisonNe
   font-family: "Ogg-Roman"; 
   font-weight: normal;
   src:
-    url('../fonts/Ogg-Roman.eot?#iefix') format(‘embedded-opentype’), 
-    url('../fonts/Ogg-Roman.woff') format(‘woff’), 
-    url('../fonts/Ogg-Roman.woff2') format('woff2');
+    url('Ogg-Roman.eot?#iefix') format('embedded-opentype'), 
+    url('Ogg-Roman.woff') format('woff'), 
+    url('Ogg-Roman.woff2') format('woff2');
 }
 @font-face{
   font-family: "MaisonNeue-Demi"; 
   font-weight: normal;
   src:
-    url('../fonts/MaisonNeue-Demi.woff') format(‘woff’), 
-    url('../fonts/MaisonNeue-Demi.woff2') format('woff2');
+    url('MaisonNeue-Demi.woff') format('woff'), 
+    url('MaisonNeue-Demi.woff2') format('woff2');
 }
 @font-face{ 
   font-family: "MaisonNeue-Light"; 
   font-weight: normal;
   src:
-    url('../fonts/MaisonNeue-Light.woff') format(‘woff’), 
-    url('../fonts/MaisonNeue-Light.woff2') format('woff2');
+    url('MaisonNeue-Light.woff') format('woff'), 
+    url('MaisonNeue-Light.woff2') format('woff2');
 }
 
 /* container */
@@ -234,37 +234,7 @@ a{color: #333; text-decoration: none; font-family: "MaisonNeue-Light", "MaisonNe
 
 .link2.hover a:before, .link2.hover a:after {width: 50%;}
 
-body {cursor: none;}
-.cursor {
-	position: absolute; z-index: 10000;
-	width: 10px; height: 10px;
-	background: #99ff33; border-radius: 50%;
-	user-select: none;
-	pointer-events: none;
-	transform: scale(1);
-	transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
-    
-}
-.cursor.active {
-	opacity: 0.5;
-	transform: scale(0);
-}
-.cursor-follower {
-	position: absolute; z-index: 9000;
-	width: 30px; height: 30px;
-	background: rgba(153,255,51,0.3); 
-	border-radius: 50%;
-	user-select: none;
-	pointer-events: none;
-	transition: transform 0.6s ease-in-out, opacity 0.2s ease-in-out;
-    
-}
-.cursor-follower.active {
-	opacity: 0.7;
-	transform: scale(3);
-}
-.chover {cursor: none; }
-
+body
 .pb02 {padding-bottom: 2%;}
 .pb03 {padding-bottom: 3%;}
 .pb04 {padding-bottom: 4%;}
