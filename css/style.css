@@ -235,6 +235,7 @@ a{color: #333; text-decoration: none; font-family: "MaisonNeue-Light", "MaisonNe
 .link2.hover a:before, .link2.hover a:after {width: 50%;}
 
 body
+.pb01 {padding-bottom: 1%;}
 .pb02 {padding-bottom: 2%;}
 .pb03 {padding-bottom: 3%;}
 .pb04 {padding-bottom: 4%;}
@@ -248,6 +249,10 @@ body
 .pb12 {padding-bottom: 12%;}
 .pb13 {padding-bottom: 13%;}
 
+.mt01 {margin-top: 1%;}
+.mt02 {margin-top: 2%;}
+.mt03 {margin-top: 3%;}
+.mt04 {margin-top: 4%;}
 .mt05 {margin-top: 5%;}
 .mt06 {margin-top: 6%;}
 .mt07 {margin-top: 7%;}
