@@ -42,16 +42,35 @@ a{color: #333; text-decoration: none; font-family: "MaisonNeue-Light", "MaisonNe
 #footer {}
 
 /*header*/
-.header {overflow: hidden}
-.header .nav {float: left; padding-top: 43px;}
+.header {overflow: hidden; padding-top: 30px;}
+.header .nav {float: right;}
 .header .nav ul {}
 .header .nav ul li {float: left; margin-right: 40px;}
 .header .nav ul li a {color: #8E8E8E; text-transform: uppercase; font-weight: normal; font-family: "MaisonNeue-Light"; letter-spacing: .18em;}
-.header h1{float: right; font-size: 23px; padding-top: 30px;font-weight: bold; position: relative; z-index: 100;}
-
+.header h1 {float: left; font-size: 19px; letter-spacing: 2.5px; font-weight: bold; position: relative; z-index: 100; }
+#myName {font-family: "MaisonNeue-Demi";}
 /*about*/
 .about {color: #313131; font-size: 50px; padding: 140px 0 190px 0; width: 70%; font-family: 'MaisonNeue-Light', sans-serif; font-weight: normal; line-height: 76px;}
 .about strong{color: #313131; font-family: "Ogg-Roman"; font-weight: 300;}
+
+/*abouts*/
+.abouts {color: #313131; font-size: 45px; padding: 140px 0 190px 0; width: 70%; font-family: 'MaisonNeue-Light', sans-serif; font-weight: normal; line-height: 50px; display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;} 
+.abouts strong{color: #313131;font-size: 25px; font-family: "Ogg-Roman"; font-weight: 300; line-height: 10px;}
+.abouts text{color: #313131;font-size: 25px; font-family: 'MaisonNeue-Light', sans-serif; font-weight: 300; line-height: 10px;}
+
+
+
+/* class */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 
 /* content */
 .content {overflow: hidden;}
