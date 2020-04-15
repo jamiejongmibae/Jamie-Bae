@@ -42,6 +42,19 @@ a{color: #333; text-decoration: none; font-family: "MaisonNeue-Light", "MaisonNe
 #footer {}
 
 /*header*/
+#header-container {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    padding: 0 0 30px 1% !important;
+    background-color: white;    
+}
+
+#header-row {
+    padding-right: 2%;
+}
+
+
 .header {overflow: hidden; padding-top: 30px;}
 .header .nav {float: right;}
 .header .nav ul {}
