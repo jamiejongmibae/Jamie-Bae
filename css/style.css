@@ -61,7 +61,7 @@ a{color: #333; text-decoration: none; font-family: "MaisonNeue-Light", "MaisonNe
 .header .nav ul li {float: left; margin-right: 40px;}
 .header .nav ul li a {color: #8E8E8E; text-transform: uppercase; font-weight: normal; font-family: "MaisonNeue-Light"; letter-spacing: .18em;}
 .header h1 {float: left; font-size: 19px; letter-spacing: 2.5px; font-weight: bold; position: relative; z-index: 100; }
-#myName {font-family: "MaisonNeue-Demi";}
+#myName {font-family: "Ogg-Roman"; font-size: 25px;}
 /*about*/
 .about {color: #313131; font-size: 50px; padding: 140px 0 190px 0; width: 70%; font-family: 'MaisonNeue-Light', sans-serif; font-weight: normal; line-height: 76px;}
 .about strong{color: #313131; font-family: "Ogg-Roman"; font-weight: 300;}
