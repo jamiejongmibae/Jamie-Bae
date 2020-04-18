@@ -73,7 +73,7 @@ a{color: #333; text-decoration: none; font-family: "MaisonNeue-Light", "MaisonNe
   width: 50%;} 
 .abouts strong{color: #313131;font-size: 25px; font-family: "Ogg-Roman"; font-weight: 300; line-height: 10px;}
 .abouts text{color: #313131;font-size: 25px; font-family: 'MaisonNeue-Light', sans-serif; font-weight: 300; line-height: 10px;}
-
+.abouts-block{margin-top:10px;}
 
 
 /* class */
@@ -385,14 +385,20 @@ body
 
 }
 
+@media (max-width: 1024px) {
+    .abouts {width: 80%;}
+}
+
 @media (max-width:920px){
     .container3 {width: 100%;}
     .about {width: 80%;}
+    .abouts {width: 81%;}
 }
 
 @media (max-width:820px){
     .container2 {width: 100%;}
     .about {width: 100%;}
+    .abouts {width: 93%;}
     
     .box .left {width: 100%; height: auto;}
     .box .right {width: 100%; padding: 0; height: auto;}
@@ -409,6 +415,8 @@ body
     .playground > div:nth-child(3) {margin-right: 2%;}
 }
 @media (max-width: 768px){
+    #header-container {position: unset;}
+    .abouts {font-size:}
     .row {padding: 0 24px;}
     #header {height: 70px;}
     .header h1 {padding-top: 16px; font-weight: normal; right: 24px; top: 0px; position: absolute;}
@@ -435,4 +443,13 @@ body
     #header.active .nav li:nth-child(2) {opacity: 1; transform: translateY(0px)}
     #header.active .nav li:nth-child(3) {opacity: 1; transform: translateY(0px)}
     #header.active .nav li a {color: #fff;}
+}
+
+@media (max-width: 414px) {
+    .abouts {padding: 47px 0 100px 0;}
+}
+
+@media (max-width: 375px) {
+    .abouts {line-height: 40px; font-size: 31px;}
+    #abouts-font {font-size: 20px;}
 }
