@@ -59,15 +59,14 @@ a{color: #333; text-decoration: none; font-family: "MaisonNeue-Light", "MaisonNe
 .header .nav {float: right;}
 .header .nav ul {}
 .header .nav ul li {float: left; margin-right: 40px;}
-.header .nav ul li a {color: #8E8E8E; text-transform: uppercase; font-weight: normal; font-family: "MaisonNeue-Light"; letter-spacing: .18em;}
+.header .nav ul li a {color: #8E8E8E; text-transform: uppercase; font-weight: normal; font-family: "MaisonNeue-Light"; letter-spacing: .10em;}
 .header h1 {float: left; font-size: 19px; letter-spacing: 2.5px; font-weight: bold; position: relative; z-index: 100; }
-#myName {font-family: "Ogg-Roman"; font-size: 27px;}
+#myName {font-family: "MaisonNeue-bold"; font-size: 23px; letter-spacing: 0px}
 /*about*/
-.about {color: #313131; font-size: 50px; padding: 140px 0 190px 0; width: 70%; font-family: 'MaisonNeue-Light', sans-serif; font-weight: normal; line-height: 76px;}
-.about strong{color: #313131; font-family: "Ogg-Roman"; font-weight: 300;}
+.about {color: #313131; font-size: 50px; padding: 90px 0 168px 0; width: 60%; font-family: 'MaisonNeue-Light', sans-serif; font-weight: normal; line-height: 70px;}
 
 /*abouts*/
-.abouts {color: #313131; font-size: 45px; padding: 140px 0 190px 0; width: 70%; font-family: 'MaisonNeue-Light', sans-serif; font-weight: normal; line-height: 50px; display: block;
+.abouts {color: #313131; font-size: 48.5px; padding: 140px 0 190px 0; width: 70%; font-family: 'MaisonNeue-Light', sans-serif; font-weight: normal; line-height: 50px; display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;} 
